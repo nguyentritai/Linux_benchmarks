@@ -1,0 +1,284 @@
+##############################################################################
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+#                                                                            #
+# 'reportable' flag not set during run                                       #
+# 471.omnetpp (base) did not have enough runs!                               #
+# 456.hmmer (base) did not have enough runs!                                 #
+# 445.gobmk (base) did not have enough runs!                                 #
+# 458.sjeng (base) did not have enough runs!                                 #
+# 429.mcf (base) did not have enough runs!                                   #
+# 473.astar (base) did not have enough runs!                                 #
+# 483.xalancbmk (base) did not have enough runs!                             #
+# 400.perlbench (base) did not have enough runs!                             #
+# 464.h264ref (base) did not have enough runs!                               #
+# 462.libquantum (base) did not have enough runs!                            #
+# 401.bzip2 (base) did not have enough runs!                                 #
+# 403.gcc (base) did not have enough runs!                                   #
+# Unknown flags were used! See                                               #
+#      http://www.spec.org/cpu2006/Docs/runspec.html#flagsurl                #
+# for information about how to get rid of this error.                        #
+#                                                                            #
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+##############################################################################
+                           SPEC(R) CINT2006 Summary
+                                  Supermicro
+               SuperServer 1029U-TR4 (X11DPU , Intel Xeon Gold
+                                    6132)
+                           Sat Nov 25 10:09:24 2017
+
+CPU2006 License: 001176                                   Test date: Nov-2017
+Test sponsor: Supermicro                     Hardware availability: Jul-2017
+Tested by:    Supermicro                     Software availability: Apr-2017
+
+                                  Estimated                       Estimated
+                Base     Base       Base        Peak     Peak       Peak
+Benchmarks     Copies  Run Time     Rate       Copies  Run Time     Rate 
+-------------- ------  ---------  ---------    ------  ---------  ---------
+400.perlbench      32        305       1020 *                                  
+401.bzip2          32        597        517 *                                  
+403.gcc            32        361        714 *                                  
+429.mcf            32        434        673 *                                  
+445.gobmk          32        463        725 *                                  
+456.hmmer          32        398        749 *                                  
+458.sjeng          32        482        803 *                                  
+462.libquantum     32       2332        284 *                                  
+464.h264ref        32        525       1350 *                                  
+471.omnetpp        32        468        427 *                                  
+473.astar          32        513        438 *                                  
+483.xalancbmk      32        228        969 *                                  
+==============================================================================
+400.perlbench      32        305       1020 *                                  
+401.bzip2          32        597        517 *                                  
+403.gcc            32        361        714 *                                  
+429.mcf            32        434        673 *                                  
+445.gobmk          32        463        725 *                                  
+456.hmmer          32        398        749 *                                  
+458.sjeng          32        482        803 *                                  
+462.libquantum     32       2332        284 *                                  
+464.h264ref        32        525       1350 *                                  
+471.omnetpp        32        468        427 *                                  
+473.astar          32        513        438 *                                  
+483.xalancbmk      32        228        969 *                                  
+ Est. SPECint(R)_rate_base2006           --
+ Est. SPECint_rate2006                                              Not Run
+
+
+                                   HARDWARE
+                                   --------
+            CPU Name: Intel Xeon Gold 6130
+ CPU Characteristics: Intel Turbo Boost Technology up to 3.70 GHz
+             CPU MHz: 2100
+                 FPU: Integrated
+      CPU(s) enabled: 32 cores, 2 chips, 16 cores/chip, 2 threads/core
+    CPU(s) orderable: 1,2 chips
+       Primary Cache: 32 KB I + 32 KB D on chip per core
+     Secondary Cache: 1 MB I+D on chip per core
+            L3 Cache: 19.25 MB I+D on chip per chip
+         Other Cache: None
+              Memory: 384 GB (24 x 16 GB 2Rx8 PC4-2666V-R)
+                      377.388 GB fixme: If using DDR3, format is:
+                      'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'
+      Disk Subsystem: 411 GB  add more disk info here
+      Other Hardware: None
+
+
+                                   SOFTWARE
+                                   --------
+    Operating System: CentOS Linux release 7.4.1708 (Core)
+                      3.10.0-693.5.2.el7.x86_64
+            Compiler: C/C++: Version 17.0.3.191 of Intel C/C++
+                      Compiler for Linux
+       Auto Parallel: No
+         File System: xfs
+        System State: Run level 3 (add definition here)
+       Base Pointers: 32-bit
+       Peak Pointers: 32/64-bit
+      Other Software: Microquill SmartHeap V10.2
+
+
+                                 Submit Notes
+                                 ------------
+     The taskset mechanism was used to bind copies to processors. The config file option 'submit'
+     was used to generate taskset commands to bind each copy to a specific processor.
+     For details, please see the config file.
+     was used to generate numactl commands to bind each copy to a specific processor.
+     For details, please see the config file.
+
+                            Operating System Notes
+                            ----------------------
+     Stack size set to unlimited using "ulimit -s unlimited"
+
+                                Platform Notes
+                                --------------
+     Sysinfo program /home/amcclab/spec2006/Docs/sysinfo
+     $Rev: 6775 $ $Date:: 2011-08-16 #$ 8787f7622badcf24e01c368b1db4377c
+     running on dhcp-10-76-191-232 Sat Nov 25 10:09:25 2017
+    
+     This section contains SUT (System Under Test) info as seen by
+     some common utilities.  To remove or add to this section, see:
+       http://www.spec.org/cpu2006/Docs/config.html#sysinfo
+    
+     From /proc/cpuinfo
+        model name : Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
+           2 "physical id"s (chips)
+           64 "processors"
+        cores, siblings (Caution: counting these is hw and system dependent.  The
+        following excerpts from /proc/cpuinfo might not be reliable.  Use with
+        caution.)
+           cpu cores : 16
+           siblings  : 32
+           physical 0: cores 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+           physical 1: cores 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+        cache size : 22528 KB
+    
+     From /proc/meminfo
+        MemTotal:       395720032 kB
+        HugePages_Total:       0
+        Hugepagesize:       2048 kB
+    
+     From /etc/*release* /etc/*version*
+        centos-release: CentOS Linux release 7.4.1708 (Core)
+        centos-release-upstream: Derived from Red Hat Enterprise Linux 7.4 (Source)
+        os-release:
+           NAME="CentOS Linux"
+           VERSION="7 (Core)"
+           ID="centos"
+           ID_LIKE="rhel fedora"
+           VERSION_ID="7"
+           PRETTY_NAME="CentOS Linux 7 (Core)"
+           ANSI_COLOR="0;31"
+           CPE_NAME="cpe:/o:centos:centos:7"
+        redhat-release: CentOS Linux release 7.4.1708 (Core)
+        system-release: CentOS Linux release 7.4.1708 (Core)
+        system-release-cpe: cpe:/o:centos:centos:7
+    
+     uname -a:
+        Linux dhcp-10-76-191-232 3.10.0-693.5.2.el7.x86_64 #1 SMP Fri Oct 20 20:32:50
+        UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+    
+     run-level 3 Nov 25 06:23
+    
+     SPEC is set to: /home/amcclab/spec2006
+        Filesystem              Type  Size  Used Avail Use% Mounted on
+        /dev/mapper/centos-home xfs   411G   35G  377G   9% /home
+    
+     (End of data from sysinfo program)
+        Filesystem     Type  Size  Used Avail Use% Mounted on
+        /dev/sda7      xfs   889G  4.1G  885G   1% /home
+     Additional information from dmidecode:
+    
+        Warning: Use caution when you interpret this section. The 'dmidecode' program
+        reads system data which is "intended to allow hardware to be accurately
+        determined", but the intent may not be met, as there are frequent changes to
+        hardware, firmware, and the "DMTF SMBIOS" standard.
+    
+       BIOS American Megatrends Inc. T20170720214342 07/20/2017
+       Memory:
+        24x Micron Technology 18ASF2G72PDZ-2G6D1 16 GB 2 rank 2666 MHz
+    
+     (End of data from sysinfo program)
+
+                                General Notes
+                                -------------
+    Environment variables set by runspec before the start of the run:
+    LD_LIBRARY_PATH = "/usr/lib:/usr/lib64"
+    
+     Binaries compiled on a system with 1x Intel Core i7-4790 CPU + 32GB RAM
+     memory using Redhat Enterprise Linux 7.2
+     Transparent Huge Pages enabled by default
+     Filesystem page cache cleared with:
+     shell invocation of 'sync; echo 3 > /proc/sys/vm/drop_caches' prior to run
+     runspec command invoked through numactl i.e.:
+     numactl --interleave=all runspec <etc>
+
+                              Base Unknown Flags
+                              ------------------
+  400.perlbench: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+      401.bzip2: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+        403.gcc: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+        429.mcf: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+      445.gobmk: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+      456.hmmer: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+      458.sjeng: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+ 462.libquantum: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+    464.h264ref: "gcc -m32 -L/usr/lib" (in CC) "gcc -m32 -L/usr/lib" (in LD)
+                 "-O3" (in COPTIMIZE)
+
+    471.omnetpp: "g++ -m32 -L/usr/lib" (in CXX) "g++ -m32 -L/usr/lib" (in LD)
+                 "-O3" (in CXXOPTIMIZE)
+                 "-Wl,-z,muldefs -Wl,-rpath=/home/amcclab/spec2006/libsmartheap_gcc32" (in EXTRA_LDFLAGS)
+                 "-L/home/amcclab/spec2006/libsmartheap_gcc32 -lsmartheapC" (in EXTRA_LIBS)
+
+      473.astar: "g++ -m32 -L/usr/lib" (in CXX) "g++ -m32 -L/usr/lib" (in LD)
+                 "-O3" (in CXXOPTIMIZE)
+                 "-Wl,-z,muldefs -Wl,-rpath=/home/amcclab/spec2006/libsmartheap_gcc32" (in EXTRA_LDFLAGS)
+                 "-L/home/amcclab/spec2006/libsmartheap_gcc32 -lsmartheapC" (in EXTRA_LIBS)
+
+  483.xalancbmk: "g++ -m32 -L/usr/lib" (in CXX) "g++ -m32 -L/usr/lib" (in LD)
+                 "-O3" (in CXXOPTIMIZE)
+                 "-Wl,-z,muldefs -Wl,-rpath=/home/amcclab/spec2006/libsmartheap_gcc32" (in EXTRA_LDFLAGS)
+                 "-L/home/amcclab/spec2006/libsmartheap_gcc32 -lsmartheapC" (in EXTRA_LIBS)
+
+
+                            Base Portability Flags
+                            ----------------------
+  400.perlbench: -DSPEC_CPU_LINUX_IA32
+ 462.libquantum: -DSPEC_CPU_LINUX
+  483.xalancbmk: -DSPEC_CPU_LINUX
+
+
+                               Base Other Flags
+                               ----------------
+C benchmarks:
+
+        403.gcc: -Dalloca=_alloca
+
+
+    SPEC and SPECint are registered trademarks of the Standard Performance
+    Evaluation Corporation.  All other brand and product names appearing
+    in this result are trademarks or registered trademarks of their
+    respective holders.
+##############################################################################
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+#                                                                            #
+# 'reportable' flag not set during run                                       #
+# 471.omnetpp (base) did not have enough runs!                               #
+# 456.hmmer (base) did not have enough runs!                                 #
+# 445.gobmk (base) did not have enough runs!                                 #
+# 458.sjeng (base) did not have enough runs!                                 #
+# 429.mcf (base) did not have enough runs!                                   #
+# 473.astar (base) did not have enough runs!                                 #
+# 483.xalancbmk (base) did not have enough runs!                             #
+# 400.perlbench (base) did not have enough runs!                             #
+# 464.h264ref (base) did not have enough runs!                               #
+# 462.libquantum (base) did not have enough runs!                            #
+# 401.bzip2 (base) did not have enough runs!                                 #
+# 403.gcc (base) did not have enough runs!                                   #
+# Unknown flags were used! See                                               #
+#      http://www.spec.org/cpu2006/Docs/runspec.html#flagsurl                #
+# for information about how to get rid of this error.                        #
+#                                                                            #
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+##############################################################################
+-----------------------------------------------------------------------------
+For questions about this result, please contact the tester.
+For other inquiries, please contact webmaster@spec.org.
+Copyright 2006-2017 Standard Performance Evaluation Corporation
+Tested with SPEC CPU2006 v1.2.
+Report generated on Sat Nov 25 12:11:53 2017 by CPU2006 ASCII formatter v6400.
