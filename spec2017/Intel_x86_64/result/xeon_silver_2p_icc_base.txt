@@ -1,0 +1,391 @@
+##############################################################################
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+#                                                                            #
+# 'reportable' flag not set during run                                       #
+# 548.exchange2_r (base) did not have enough runs!                           #
+# 500.perlbench_r (base) did not have enough runs!                           #
+# 557.xz_r (base) did not have enough runs!                                  #
+# 505.mcf_r (base) did not have enough runs!                                 #
+# 525.x264_r (base) did not have enough runs!                                #
+# 520.omnetpp_r (base) did not have enough runs!                             #
+# 541.leela_r (base) did not have enough runs!                               #
+# 523.xalancbmk_r (base) did not have enough runs!                           #
+# 502.gcc_r (base) did not have enough runs!                                 #
+# 531.deepsjeng_r (base) did not have enough runs!                           #
+# Unknown flags were used! See                                               #
+#      https://www.spec.org/cpu2017/Docs/runcpu.html#flagsurl                #
+# for information about how to get rid of this error.                        #
+#                                                                            #
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+##############################################################################
+                                                                                       SPEC(R) CPU2017 Integer Rate Result
+                                                                                                    SuperMicro
+                                                                                                ThinkSystem SR530
+                                                                                        (2.10 GHz, Intel Xeon Silver 4110)
+                                                                                          Test Sponsor: Ampere Computing
+
+                                                                   CPU2017 License: XXXX                                    Test date: Dec-2017
+                                                                   Test sponsor: Ampere Computing               Hardware availability: Aug-2017
+                                                                   Tested by:    Ampere Computing               Software availability: Sep-2017
+
+                       Estimated                       Estimated
+                Base     Base       Base        Peak     Peak       Peak
+Benchmarks     Copies  Run Time     Rate       Copies  Run Time     Rate 
+-------------- ------  ---------  ---------    ------  ---------  ---------   
+500.perlbench_r     32        896       56.9  *                                 
+502.gcc_r          32        779       58.2  *                                 
+505.mcf_r          32        561       92.2  *                                 
+520.omnetpp_r      32        868       48.4  *                                 
+523.xalancbmk_r     32        443       76.4  *                                 
+525.x264_r         32        411      136    *                                 
+531.deepsjeng_r     32        580       63.2  *                                 
+541.leela_r        32        919       57.7  *                                 
+548.exchange2_r     32        615      136    *                                 
+557.xz_r           32        635       54.4  *                                 
+==============================================================================
+500.perlbench_r     32        896       56.9  *                                 
+502.gcc_r          32        779       58.2  *                                 
+505.mcf_r          32        561       92.2  *                                 
+520.omnetpp_r      32        868       48.4  *                                 
+523.xalancbmk_r     32        443       76.4  *                                 
+525.x264_r         32        411      136    *                                 
+531.deepsjeng_r     32        580       63.2  *                                 
+541.leela_r        32        919       57.7  *                                 
+548.exchange2_r     32        615      136    *                                 
+557.xz_r           32        635       54.4  *                                 
+ Est. SPECrate2017_int_base            72.8
+ Est. SPECrate2017_int_peak                                         Not Run
+
+
+                                                                                                     HARDWARE
+                                                                                                     --------
+            CPU Name: Intel Xeon Silver 4110
+            Max MHz.: 3000
+             Nominal: 2100
+             Enabled: 16 cores, 2 chips, 2 threads/core
+           Orderable: 1,2 chips
+            Cache L1: 32 KB I + 32 KB D on chip per core
+                  L2: 1 MB I+D on chip per core
+                  L3: 11 MB I+D on chip per chip
+               Other: None
+              Memory: 376.404 GB fixme: If using DDR3, format is:
+                      'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'
+             Storage: 411 GB  add more disk info here
+               Other: None
+
+
+                                                                                                     SOFTWARE
+                                                                                                     --------
+                  OS: CentOS Linux release 7.4.1708 (Core)
+                      3.10.0-693.5.2.el7.x86_64
+            Compiler: C/C++: Version 18.0.0.128 of Intel C/C++
+                      Compiler for Linux;
+                      Fortran: Version 18.0.0.128 of Intel Fortran
+                      Compiler for Linux
+            Parallel: No
+            Firmware: --
+         File System: xfs
+        System State: Run level 3 (add definition here)
+       Base Pointers: 64-bit
+       Peak Pointers: 32/64-bit
+               Other: jemalloc: jemalloc memory allocator library
+                      V5.0.1;
+                      jemalloc: configured and built at default for
+                      32bit (i686) and 64bit (x86_64) targets;
+                      jemalloc: built with the RedHat Enterprise 7.4,
+                      and the system compiler gcc 4.8.5;
+                      jemalloc: sources avilable from jemalloc.net or
+                      https://github.com/jemalloc/jemalloc/releases;
+
+
+                                                                                                   Submit Notes
+                                                                                                   ------------
+     The numactl mechanism was used to bind copies to processors. The config file option 'submit'
+     was used to generate numactl commands to bind each copy to a specific processor.
+     For details, please see the config file.
+
+                                                                                              Operating System Notes
+                                                                                              ----------------------
+     Stack size set to unlimited using "ulimit -s unlimited"
+
+                                                                                                  General Notes
+                                                                                                  -------------
+    Environment variables set by runcpu before the start of the run:
+    LD_LIBRARY_PATH = "/home/amcclab/benchmark/speccpu2017/lib/ia32:/home/amcclab/benchmark/speccpu2017/lib/intel64:/home/amcclab/benchmark/speccpu2017/je5.0.1-32:/home/amcclab/benchmark/speccpu2017/je5.0.1-64"
+    LD_LIBRARY_PATH = "$LD_LIBRARY_PATH:/home/cpu2017.1.0.2.ic18.0/je5.0.1-32:/home/cpu2017.1.0.2.ic18.0/je5.0.1-64"
+    OMP_STACKSIZE = "192M"
+    
+     Binaries compiled on a system with 1x Intel Core i7-4790 CPU + 32GB RAM
+     memory using Redhat Enterprise Linux 7.4
+     Transparent Huge Pages enabled by default
+     Prior to runcpu invocation
+     Filesystem page cache synced and cleared with:
+     sync; echo 3>       /proc/sys/vm/drop_caches
+
+                                                                                                  Platform Notes
+                                                                                                  --------------
+    BIOS configuration:
+    Choose Operating Mode set to Maximum Performance
+    DCU Streamer Prefetcher set to Enable
+    MONITORMWAIT set to Enable
+    SNC set to Enable
+    XPT Prefetcher set to Enable
+    Stale AtoS set to Enable
+     Sysinfo program /home/amcclab/benchmark/speccpu2017/bin/sysinfo
+     Rev: r5797 of 2017-06-14 96c45e4568ad54c135fd618bcc091c0f
+     running on skylake-4110-01 Fri Dec  8 19:08:58 2017
+    
+     SUT (System Under Test) info as seen by some common utilities.
+     For more information on this section, see
+        https://www.spec.org/cpu2017/Docs/config.html#sysinfo
+    
+     From /proc/cpuinfo
+        model name : Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz
+           2  "physical id"s (chips)
+           32 "processors"
+        cores, siblings (Caution: counting these is hw and system dependent. The following
+        excerpts from /proc/cpuinfo might not be reliable.  Use with caution.)
+           cpu cores : 8
+           siblings  : 16
+           physical 0: cores 0 1 2 3 4 5 6 7
+           physical 1: cores 0 1 2 3 4 5 6 7
+    
+     From lscpu:
+          Architecture:          x86_64
+          CPU op-mode(s):        32-bit, 64-bit
+          Byte Order:            Little Endian
+          CPU(s):                32
+          On-line CPU(s) list:   0-31
+          Thread(s) per core:    2
+          Core(s) per socket:    8
+          Socket(s):             2
+          NUMA node(s):          2
+          Vendor ID:             GenuineIntel
+          CPU family:            6
+          Model:                 85
+          Model name:            Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz
+          Stepping:              4
+          CPU MHz:               2101.000
+          CPU max MHz:           2101.0000
+          CPU min MHz:           800.0000
+          BogoMIPS:              4200.00
+          Virtualization:        VT-x
+          L1d cache:             32K
+          L1i cache:             32K
+          L2 cache:              1024K
+          L3 cache:              11264K
+          NUMA node0 CPU(s):     0-7,16-23
+          NUMA node1 CPU(s):     8-15,24-31
+          Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov
+          pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp
+          lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc
+          aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma
+          cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes
+          xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_pt
+          tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2
+          erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb
+          avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc
+          cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+    
+     /proc/cpuinfo cache data
+        cache size : 11264 KB
+    
+     From numactl --hardware  WARNING: a numactl 'node' might or might not correspond to a
+     physical chip.
+       available: 2 nodes (0-1)
+       node 0 cpus: 0 1 2 3 4 5 6 7 16 17 18 19 20 21 22 23
+       node 0 size: 195246 MB
+       node 0 free: 190284 MB
+       node 1 cpus: 8 9 10 11 12 13 14 15 24 25 26 27 28 29 30 31
+       node 1 size: 196608 MB
+       node 1 free: 191790 MB
+       node distances:
+       node   0   1
+         0:  10  21
+         1:  21  10
+    
+     From /proc/meminfo
+        MemTotal:       394688036 kB
+        HugePages_Total:       0
+        Hugepagesize:       2048 kB
+    
+     From /etc/*release* /etc/*version*
+        centos-release: CentOS Linux release 7.4.1708 (Core)
+        centos-release-upstream: Derived from Red Hat Enterprise Linux 7.4 (Source)
+        os-release:
+           NAME="CentOS Linux"
+           VERSION="7 (Core)"
+           ID="centos"
+           ID_LIKE="rhel fedora"
+           VERSION_ID="7"
+           PRETTY_NAME="CentOS Linux 7 (Core)"
+           ANSI_COLOR="0;31"
+           CPE_NAME="cpe:/o:centos:centos:7"
+        redhat-release: CentOS Linux release 7.4.1708 (Core)
+        system-release: CentOS Linux release 7.4.1708 (Core)
+        system-release-cpe: cpe:/o:centos:centos:7
+    
+     uname -a:
+        Linux skylake-4110-01 3.10.0-693.5.2.el7.x86_64 #1 SMP Fri Oct 20 20:32:50 UTC 2017
+        x86_64 x86_64 x86_64 GNU/Linux
+    
+     run-level 3 Dec 8 19:07
+    
+     SPEC is set to: /home/amcclab/benchmark/speccpu2017
+        Filesystem              Type  Size  Used Avail Use% Mounted on
+        /dev/mapper/centos-home xfs   411G  103G  308G  25% /home
+    
+     Additional information from dmidecode follows.  WARNING: Use caution when you interpret
+     this section. The 'dmidecode' program reads system data which is "intended to allow
+     hardware to be accurately determined", but the intent may not be met, as there are
+     frequent changes to hardware, firmware, and the "DMTF SMBIOS" standard.
+       BIOS American Megatrends Inc. 1.0 04/07/2017
+       Memory:
+        4x NO DIMM NO DIMM
+        12x Samsung M393A4K40BB1-CRC 32 GB 2 rank 2400
+    
+     (End of data from sysinfo program)
+
+                                                                                              Compiler Version Notes
+                                                                                              ----------------------
+    ==============================================================================
+     CC  500.perlbench_r(base) 502.gcc_r(base) 505.mcf_r(base) 525.x264_r(base)
+          557.xz_r(base)
+    ------------------------------------------------------------------------------
+    icc (ICC) 18.0.1 20171018
+    Copyright (C) 1985-2017 Intel Corporation.  All rights reserved.
+    ------------------------------------------------------------------------------
+    
+    ==============================================================================
+     CXXC 520.omnetpp_r(base) 523.xalancbmk_r(base) 531.deepsjeng_r(base)
+          541.leela_r(base)
+    ------------------------------------------------------------------------------
+    icpc (ICC) 18.0.1 20171018
+    Copyright (C) 1985-2017 Intel Corporation.  All rights reserved.
+    ------------------------------------------------------------------------------
+    
+    ==============================================================================
+     FC  548.exchange2_r(base)
+
+    ------------------------------------------------------------------------------
+    ifort (IFORT) 18.0.1 20171018
+    Copyright (C) 1985-2017 Intel Corporation.  All rights reserved.
+    ------------------------------------------------------------------------------
+
+                                                                                                Base Unknown Flags
+                                                                                                ------------------
+ 500.perlbench_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+       502.gcc_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+       505.mcf_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+   520.omnetpp_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+ 523.xalancbmk_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+      525.x264_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+ 531.deepsjeng_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+     541.leela_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+ 548.exchange2_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+        557.xz_r: "-Wl,-rpath=/usr/local/lib64 -Wl,-rpath=/usr/local/lib" (in EXTRA_LDFLAGS)
+                  "-L/home/amcclab/benchmark/speccpu2017/je5.0.1-64" (in EXTRA_LIBS)
+
+
+                                                                                             Base Compiler Invocation
+                                                                                             ------------------------
+C benchmarks: 
+     icc
+
+C++ benchmarks: 
+     icpc
+
+Fortran benchmarks: 
+     ifort
+
+
+                                                                                              Base Portability Flags
+                                                                                              ----------------------
+ 500.perlbench_r: -DSPEC_LP64 -DSPEC_LINUX_X64
+       502.gcc_r: -DSPEC_LP64
+       505.mcf_r: -DSPEC_LP64
+   520.omnetpp_r: -DSPEC_LP64
+ 523.xalancbmk_r: -DSPEC_LP64 -DSPEC_LINUX
+      525.x264_r: -DSPEC_LP64
+ 531.deepsjeng_r: -DSPEC_LP64
+     541.leela_r: -DSPEC_LP64
+ 548.exchange2_r: -DSPEC_LP64
+        557.xz_r: -DSPEC_LP64
+
+
+                                                                                             Base Optimization Flags
+                                                                                             -----------------------
+C benchmarks: 
+     -Wl,-z,muldefs -xCORE-AVX512 -ipo -O3 -no-prec-div
+     -qopt-mem-layout-trans=3 -ljemalloc
+
+C++ benchmarks: 
+     -Wl,-z,muldefs -xCORE-AVX512 -ipo -O3 -no-prec-div
+     -qopt-mem-layout-trans=3 -ljemalloc
+
+Fortran benchmarks: 
+     -Wl,-z,muldefs -xCORE-AVX512 -ipo -O3 -no-prec-div
+     -qopt-mem-layout-trans=3 -nostandard-realloc-lhs -align array32byte
+     -ljemalloc
+
+
+                                                                                                 Base Other Flags
+                                                                                                 ----------------
+C benchmarks: 
+     -m64 -std=c11
+
+C++ benchmarks: 
+     -m64
+
+Fortran benchmarks: 
+     -m64
+
+
+  SPEC is a registered trademark of the Standard Performance Evaluation
+    Corporation.  All other brand and product names appearing in this
+    result are trademarks or registered trademarks of their respective
+    holders.
+##############################################################################
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+#                                                                            #
+# 'reportable' flag not set during run                                       #
+# 548.exchange2_r (base) did not have enough runs!                           #
+# 500.perlbench_r (base) did not have enough runs!                           #
+# 557.xz_r (base) did not have enough runs!                                  #
+# 505.mcf_r (base) did not have enough runs!                                 #
+# 525.x264_r (base) did not have enough runs!                                #
+# 520.omnetpp_r (base) did not have enough runs!                             #
+# 541.leela_r (base) did not have enough runs!                               #
+# 523.xalancbmk_r (base) did not have enough runs!                           #
+# 502.gcc_r (base) did not have enough runs!                                 #
+# 531.deepsjeng_r (base) did not have enough runs!                           #
+# Unknown flags were used! See                                               #
+#      https://www.spec.org/cpu2017/Docs/runcpu.html#flagsurl                #
+# for information about how to get rid of this error.                        #
+#                                                                            #
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+##############################################################################
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+For questions about this result, please contact the tester.
+For other inquiries, please contact info@spec.org.
+Copyright 2017 Standard Performance Evaluation Corporation
+Tested with SPEC CPU2017 v1.0.2 on 2017-12-08 19:08:58-0800.
+Report generated on 2017-12-08 21:12:38 by CPU2017 ASCII formatter v5178.
